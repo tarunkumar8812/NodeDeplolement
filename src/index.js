@@ -12,10 +12,7 @@ app.use(cors())
 // app.use(cookieParser())
 app.use(express.json())
 
-app.use("/", (req, res) => {
-
-    res.json({ status: true, message: "successful" })
-})
+app.use("/", router)
 
 mongoose
     .connect(MONGO_URL, { useNewUrlParser: true }, mongoose.set('strictQuery', true))
