@@ -3,7 +3,7 @@ const router = express.Router();
 
 router.get("/", (req, res) => {
 
-    res.json({ status: true, message: "this is from balck url successfully" })
+    res.json({ status: true, message: "start your nodeJS developement now..." })
 });
 
 
